@@ -1,12 +1,13 @@
-package as.spring.springLearning;
+package as.spring.journal.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Myclass {
-    @GetMapping("hello")
-    public String sayHello(){
-       return "Hello Ashish";
+public class HealthCheck {
+
+    @GetMapping("ok")
+    public String healthCheck(){
+        return "ok";
     }
 }
